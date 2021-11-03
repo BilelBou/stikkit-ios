@@ -9,10 +9,10 @@ import UIKit
 
 class StickerTableViewCell: UITableViewCell {
 
-    private lazy var image = UIImageView()..{
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        //$0.image = UIImage(named: "logo")
-    }
+//    private lazy var image = UIImageView()..{
+//        $0.translatesAutoresizingMaskIntoConstraints = false
+//        //$0.image = UIImage(named: "logo")
+//    }
 
     private lazy var nameLabel: UILabel = UILabel()..{
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -41,18 +41,18 @@ class StickerTableViewCell: UITableViewCell {
     private func setup() {
         contentView.addSubview(nameLabel)
         contentView.addSubview(cityLabel)
-        contentView.addSubview(image)
+//        contentView.addSubview(image)
         NSLayoutConstraint.activate([
-            image.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Margin._12),
-            image.centerYAnchor.constraint(equalTo: centerYAnchor),
-            image.widthAnchor.constraint(equalToConstant: 30),
-            image.heightAnchor.constraint(equalToConstant: 30),
+//            image.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Margin._12),
+//            image.centerYAnchor.constraint(equalTo: centerYAnchor),
+//            image.widthAnchor.constraint(equalToConstant: 30),
+//            image.heightAnchor.constraint(equalToConstant: 30),
 
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: Margin._12),
-            nameLabel.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: Margin._12),
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: Margin._12),
 
             cityLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: Margin._6),
-            cityLabel.leadingAnchor.constraint(equalTo: image.trailingAnchor, constant: Margin._12),
+            cityLabel.leadingAnchor.constraint(equalTo: trailingAnchor, constant: Margin._12),
 
 
         ])
