@@ -11,7 +11,7 @@ class StickerTableViewCell: UITableViewCell {
 
     private lazy var image = UIImageView()..{
         $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.image = UIImage(named: "logo")
+        //$0.image = UIImage(named: "logo")
     }
 
     private lazy var nameLabel: UILabel = UILabel()..{

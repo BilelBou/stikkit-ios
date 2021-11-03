@@ -17,7 +17,7 @@ class DashboardTabBarController: UITabBarController {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = Color.backgroundColor
             tabBar.standardAppearance = appearance
-            tabBar.scrollEdgeAppearance = tabBar.standardAppearance
+            //tabBar.scrollEdgeAppearance = tabBar.standardAppearance
         }
         //checkLogin()
     }
