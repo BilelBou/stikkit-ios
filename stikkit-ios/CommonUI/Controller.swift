@@ -65,12 +65,22 @@ enum NavBarButtonStyle : Equatable {
         case .dismiss:
             return Icon.App.chevronDown.typographyIcon(color, font: Font.Icon._22)
         case .next:
-            return "Next".typography(.textStrong, color: color)
+            return LocalizedString.next.localizedCapitalized.typography(.textStrong, color: color)
+        case .nextWithCount(let count):
+            return "\(LocalizedString.next.localizedCapitalized) (\(count))".typography(.textStrong, color: color)
         case .none:
             return NSAttributedString()
+        case .done:
+            return LocalizedString.done.localizedCapitalized.typography(.textStrong, color: color)
         case .option:
             let color: UIColor = color == Color.white ? Color.lightGray : color
-            return Icon.App.option.typographyIcon(color, font: Font.Icon._20)
+            return Icon.App.option.typographyIcon(color, font: Font.Icon._24)
+        case .cancel:
+            return LocalizedString.cancel.localizedCapitalized.typography(.textStrong, color: color)
+        case .skip:
+            return LocalizedString.skip.localizedCapitalized.typography(.textStrong, color: color)
+        case .logOut:
+            return LocalizedString.logOut.localizedCapitalized.typography(.textStrong, color: color)
         case .challenge:
             return Icon.App.crown.typographyIcon(color, font: Font.Icon._20)
         case .setting:
@@ -82,9 +92,7 @@ enum NavBarButtonStyle : Equatable {
         case .notifications:
             return Icon.App.bell.typographyIcon(color, font: Font.Icon._24)
         case .messages:
-            return Icon.App.paperPlaneRight.typographyIcon(color, font: Font.Icon._24)
-        default:
-            return "default".typography(.textStrong)
+            return Icon.App.paperPlaneUpRight.typographyIcon(color, font: Font.Icon._24)
         }
     }
     
@@ -159,7 +167,7 @@ class Controller: UIViewController {
     }
     
     private func configureNavigationBar(with font: UIFont) {
-        navigationController?.navigationBar.backgroundColor = Color.backgroundColor
+        navigationController?.navigationBar.backgroundColor = Color.black
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: Color.white, .font: font]
     }

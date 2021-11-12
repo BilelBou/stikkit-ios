@@ -490,7 +490,19 @@ enum Icon {
         static let record            = "\u{e992}"
         static let squareGrid2x2     = "\u{e994}"
     }
-
+    
+    enum Rank {
+        static let rank250           = "\u{e955}"
+        static let rank150           = "\u{e903}"
+        static let rank100           = "\u{e906}"
+        static let rank50            = "\u{e908}"
+        static let lowElo            = "\u{e982}"
+        static let neon              = "\u{e97b}"
+        static let ruby              = "\u{e97e}"
+        static let platinum          = "\u{e97c}"
+        static let diamond           = "\u{e97d}"
+    }
+    
     enum Action {
         static let shake             = "\u{e942}"
         static let media             = "\u{e90e}"

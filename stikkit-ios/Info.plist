@@ -2,10 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>This let Stikkit track your position</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>This let Stikkit track your position</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RoobertRegular.woff</string>
+		<string>RoobertSemiBold.ttf</string>
+		<string>Icon.ttf</string>
+		<string>RoobertBold.woff</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -54,13 +57,6 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Icon.ttf</string>
-		<string>RoobertSemiBold.woff</string>
-		<string>RoobertRegular.woff</string>
-		<string>RoobertBold.woff</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
